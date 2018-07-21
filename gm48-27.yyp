@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "08c9717c-422a-451d-85d9-c0fa0b203800",
+            "Value": {
+                "id": "a65e7bed-9508-46c8-8a41-727abc7756f8",
+                "resourcePath": "objects\\oGamepadController\\oGamepadController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "113f7ed3-66ec-4962-b12b-15bb3d032854",
             "Value": {
                 "id": "06ec41b7-9c89-47d3-b172-3e0ebffa32d0",
@@ -51,6 +59,22 @@
             "Value": {
                 "id": "04621ac2-105e-4ef2-a909-de69edf1cccf",
                 "resourcePath": "views\\1cadd9bb-0922-47f9-99a5-3c07e6cf9548.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "26d1b574-3417-4e29-af57-63956b74594e",
+            "Value": {
+                "id": "f6c8727b-1419-4771-b5c6-3e6d0fef7146",
+                "resourcePath": "views\\26d1b574-3417-4e29-af57-63956b74594e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "45b54a0c-edc7-49f7-8cc2-c4bb5bd44d48",
+            "Value": {
+                "id": "bc3d6487-4c5d-4f67-9c8a-055d897989a5",
+                "resourcePath": "views\\45b54a0c-edc7-49f7-8cc2-c4bb5bd44d48.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -79,6 +103,14 @@
             }
         },
         {
+            "Key": "637bd1e4-9fb4-410f-94a2-19add80fae84",
+            "Value": {
+                "id": "4c2bb6e7-85a8-4d50-ac4c-79a9f61727ab",
+                "resourcePath": "objects\\object3\\object3.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "708e7197-c49f-4bfc-8d5d-71d3e6106ea2",
             "Value": {
                 "id": "b58db7fe-752e-4516-b1a3-ca7543b0ed4e",
@@ -103,6 +135,22 @@
             }
         },
         {
+            "Key": "78f8f564-35c7-4100-aa2c-64bdd5598a50",
+            "Value": {
+                "id": "74072eb3-be55-4627-ac63-a6c09ef6f66c",
+                "resourcePath": "objects\\oRoomTransition\\oRoomTransition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7f2de223-3b48-4d0f-ac8c-06c0e4760fa7",
+            "Value": {
+                "id": "e8d4d26b-f878-43ef-b1bf-254fc7794bb2",
+                "resourcePath": "objects\\oMenu\\oMenu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "98ce1cd9-a793-4ee7-938e-3bdba4508654",
             "Value": {
                 "id": "97ea8cb8-600b-440d-b050-2d30c274a65b",
@@ -116,6 +164,14 @@
                 "id": "8169bc94-fad4-48c1-84ea-88cbe5c53f91",
                 "resourcePath": "views\\9d07028a-54e6-4c8a-a933-52d11fb2cb71.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a683552f-89d6-4d45-bdbe-81befbf4308b",
+            "Value": {
+                "id": "59e0766c-a933-4d85-8659-1b4c56d22b7b",
+                "resourcePath": "scripts\\asyncGamepadEvents\\asyncGamepadEvents.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -146,7 +202,7 @@
             "Key": "c836f343-deb8-4fdc-b9b3-75a3a2b09168",
             "Value": {
                 "id": "6da76840-10a4-4ce0-b65a-2d3f0293e513",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\menu\\menu.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -175,11 +231,27 @@
             }
         },
         {
+            "Key": "e5f0ee50-732c-4f80-bfe1-b760e39d51ad",
+            "Value": {
+                "id": "9405bbde-189d-402e-a26a-ee12a865dc45",
+                "resourcePath": "fonts\\font0\\font0.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "ecbdb5be-403f-4fb8-b398-aa66c7e218e5",
             "Value": {
                 "id": "38599a23-ac0b-47a3-a3c5-c0664c4c2270",
                 "resourcePath": "views\\ecbdb5be-403f-4fb8-b398-aa66c7e218e5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f2f2ef22-219a-44f5-ad7c-faf613a61b1c",
+            "Value": {
+                "id": "45b4fd1f-0daf-491e-b1e4-8152da3b07bb",
+                "resourcePath": "rooms\\level1\\level1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -200,7 +272,7 @@
         }
     ],
     "script_order": [
-        
+        "a683552f-89d6-4d45-bdbe-81befbf4308b"
     ],
     "tutorial": ""
 }
