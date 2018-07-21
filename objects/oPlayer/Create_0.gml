@@ -12,6 +12,10 @@ movespeed = 2;
 points = 0;
 lastPoints = 0;
 
+// Start Pos
+startX = x;
+startY = y;
+
 // Sprite Info
 sprite_bbox_left = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_index);
 sprite_bbox_right = sprite_get_bbox_right(sprite_index) - sprite_get_xoffset(sprite_index);
