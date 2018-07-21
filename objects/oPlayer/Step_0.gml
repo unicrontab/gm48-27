@@ -25,7 +25,7 @@ if (yspeed > 0){ // Downward
 	var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom) & tile_index_mask;
 	
 	if (t1 != 0 || t2 != 0){
-		y = ((bbox_bottom & ~15) - 1) - sprite_bbox_bottom;
+		y = ((bbox_bottom & ~15) - 0.6) - sprite_bbox_bottom;
 		yspeed = 0;
 	}
 }
@@ -61,6 +61,7 @@ else{ // Left
 	}
 }
 
+if (sign(xspeed) != 0) image_xscale = sign(xspeed);
 
 if (sign(yspeed) < 0) {
 	sprite_index = sPlayerJump;
@@ -72,8 +73,7 @@ if (sign(yspeed) < 0) {
 	image_index = 1;
 } else if (sign(xspeed) != 0) {
 	sprite_index = sPlayerRun;
-	image_speed = xspeed / 1.5;
-	image_xscale = sign(xspeed);
+	image_speed = xspeed;
 } else {
 	sprite_index = sPlayerIdle;
 	image_speed = 1;
