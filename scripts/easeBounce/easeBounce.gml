@@ -1,5 +1,5 @@
-/// @arg xStart
-/// @arg xAmount
+/// @arg yStart
+/// @arg yAmount
 /// @arg speed
 
 y += argument[2] * scaleDir;

@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0094560c-6451-4180-9d96-6f7949c08af5",
+            "Value": {
+                "id": "0fef3c46-aec3-40be-81c3-648f480bf3e9",
+                "resourcePath": "objects\\oLiver\\oLiver.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0097da6c-b35c-4f90-b512-d762afcc7eb0",
             "Value": {
                 "id": "815e3c08-9008-40b6-813d-a168c349848a",
@@ -159,6 +167,14 @@
             }
         },
         {
+            "Key": "64592f75-e16c-420a-bc7b-71c11c5d2682",
+            "Value": {
+                "id": "848bf18f-4260-4d20-b83b-64ab5b80f820",
+                "resourcePath": "objects\\oKidney\\oKidney.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6461bd9f-e1c5-462f-831a-c3024d5bef83",
             "Value": {
                 "id": "5d7d9539-aca9-4a57-a906-f23dc98461c6",
@@ -187,6 +203,14 @@
             "Value": {
                 "id": "9bbc66cc-9b34-4add-ae64-b2772d3f232c",
                 "resourcePath": "views\\736aae3d-4fa8-4892-a8ab-941554976496.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "73a74428-c00d-46b1-a550-ba753bfeccee",
+            "Value": {
+                "id": "f7e70004-facf-4bd3-9f91-5509bba542b8",
+                "resourcePath": "views\\73a74428-c00d-46b1-a550-ba753bfeccee.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -236,6 +260,14 @@
                 "id": "65195fe7-3026-488a-8019-70c24daa0269",
                 "resourcePath": "sprites\\sPlayerIdle\\sPlayerIdle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8c659455-2ae1-417d-88dd-628510d68aa6",
+            "Value": {
+                "id": "6f4e8c3e-20e7-4a05-ae70-d897c8e5edcd",
+                "resourcePath": "objects\\oChangeRooms\\oChangeRooms.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -356,6 +388,14 @@
                 "id": "1e52a156-6cd1-44bf-b907-c99648dc29db",
                 "resourcePath": "sprites\\background\\background.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d1db0ee4-9740-4c63-9c91-7b4a30460316",
+            "Value": {
+                "id": "acf16dee-011a-47d1-bac7-23a1ce061745",
+                "resourcePath": "objects\\oHeart\\oHeart.yy",
+                "resourceType": "GMObject"
             }
         },
         {

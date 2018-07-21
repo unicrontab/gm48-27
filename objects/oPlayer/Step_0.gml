@@ -5,8 +5,10 @@ if (global.gamepad != noone) {
 	move = lh_axis;
 }
 
-xspeed = move * movespeed;
-yspeed += grav;
+if (!global.transitioning){
+	xspeed = move * movespeed;
+	yspeed += grav;
+}
 if (yspeed > maxYSpeed) yspeed = maxYSpeed;
 
 // Jumping
