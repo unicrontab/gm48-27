@@ -1,6 +1,6 @@
 /// @description Placeholder Menu
 
-draw_set_color(global.colors[10]);
+draw_set_color(global.colors[6]);
 draw_set_halign(fa_center);
 draw_set_font(font0);
 
