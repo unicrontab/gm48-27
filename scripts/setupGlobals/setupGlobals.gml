@@ -27,9 +27,7 @@ global.colors[22] = $3e6def;
 global.colors[23] = $22a8f6;
 
 
-
-
 global.blue = hex("0000ff");
 show_debug_message(global.blue);
 
-
+global.roomPosotions = ds_map_create();

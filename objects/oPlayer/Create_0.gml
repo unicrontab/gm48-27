@@ -12,6 +12,12 @@ movespeed = 2;
 points = 0;
 lastPoints = 0;
 
+if (ds_map_exists(global.roomPosotions, room_get_name(room))){
+	pos = global.roomPosotions[? room_get_name(room)];
+	x = pos[0];
+	y = pos[1];
+}	
+
 // Start Pos
 startX = x;
 startY = y;

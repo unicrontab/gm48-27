@@ -12,5 +12,3 @@ else{
 	x += (xTo - x) / snapSpeed;
 	y += (yTo - y) / snapSpeed;
 }
-
-show_debug_message(30 * offset);
