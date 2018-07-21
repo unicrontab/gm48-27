@@ -1,6 +1,6 @@
 if (follow != noone) {
-	xTo = follow.x;// + mouseAheadX;
-	yTo = follow.y - 50;// + mouseAheadY;
+	xTo = follow.x + (15 * oPlayer.image_xscale);
+	yTo = follow.y + (oPlayer.yspeed * 15);
 }
 
 // Update camera pos

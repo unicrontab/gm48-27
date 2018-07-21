@@ -16,4 +16,4 @@ yTo = y;
 shakeLength = 0;
 shakeIntensity = 0;
 shakeRemaining = 0;
-snapSpeed = 4;
+snapSpeed = 10;
