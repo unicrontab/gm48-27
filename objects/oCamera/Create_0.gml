@@ -1,4 +1,4 @@
-camera = camera_create();
+camera = camera_create_view(0, 0, room_width, room_height);
 window_set_cursor(cr_none);
 
 

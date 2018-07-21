@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "3c93ffbc-8410-4de2-b815-ae58d02ee0e5",
+            "Value": {
+                "id": "595eaccd-939d-4867-b047-3b923c5661eb",
+                "resourcePath": "scripts\\easeBounce\\easeBounce.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3ca8d942-467e-4c26-83b9-3631548cd887",
             "Value": {
                 "id": "c4a23fcf-b918-452b-8fb3-5341f9090f5b",
@@ -132,14 +140,6 @@
                 "id": "a1ebd11f-20e6-452e-9c32-e89de6024862",
                 "resourcePath": "views\\604949e0-3d4f-419d-bc6d-fcc04b74252d.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "62972804-b3ce-49f8-bf20-04158d6752c2",
-            "Value": {
-                "id": "2db0d862-da7c-464d-8161-e92a1d9fe4cc",
-                "resourcePath": "notes\\compatibility_report_210718_1252535253.yy",
-                "resourceType": "GMNotes"
             }
         },
         {
@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "a8413546-0fbe-4def-92f1-f150b086ad0d",
+            "Value": {
+                "id": "37656c4e-8142-4886-8fe6-bb354008e19d",
+                "resourcePath": "fonts\\font1\\font1.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "61e7202c-7f40-4577-bd7f-2357ebeb3111",
@@ -287,11 +295,11 @@
             }
         },
         {
-            "Key": "c10efc42-316d-4e8f-85a6-06b5b7a24c32",
+            "Key": "b05a68e3-9994-4a47-8995-3b1a4a6afa75",
             "Value": {
-                "id": "081fce67-1d28-4d17-becd-6a20c311fe95",
-                "resourcePath": "extensions\\Easing_and_Tweening\\Easing_and_Tweening.yy",
-                "resourceType": "GMExtension"
+                "id": "e2857c32-7b77-48cd-a0f8-5df47a214b1f",
+                "resourcePath": "objects\\oGameController\\oGameController.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -411,7 +419,8 @@
         "a683552f-89d6-4d45-bdbe-81befbf4308b",
         "3ca8d942-467e-4c26-83b9-3631548cd887",
         "d8947c03-41aa-4c81-8853-a7b5a3f3f80e",
-        "31c8feee-2f5a-48e1-b18d-84a0289deb3a"
+        "31c8feee-2f5a-48e1-b18d-84a0289deb3a",
+        "3c93ffbc-8410-4de2-b815-ae58d02ee0e5"
     ],
     "tutorial": ""
 }
