@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "31c8feee-2f5a-48e1-b18d-84a0289deb3a",
+            "Value": {
+                "id": "0e904976-cf0d-40dd-a1a6-29161c02e6fe",
+                "resourcePath": "scripts\\easeScale\\easeScale.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "329e6e07-4cc5-4658-b2e9-ee56043a0074",
             "Value": {
                 "id": "f6a721a9-d4fc-4129-89da-6a39b17d635c",
@@ -124,6 +132,14 @@
                 "id": "a1ebd11f-20e6-452e-9c32-e89de6024862",
                 "resourcePath": "views\\604949e0-3d4f-419d-bc6d-fcc04b74252d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "62972804-b3ce-49f8-bf20-04158d6752c2",
+            "Value": {
+                "id": "2db0d862-da7c-464d-8161-e92a1d9fe4cc",
+                "resourcePath": "notes\\compatibility_report_210718_1252535253.yy",
+                "resourceType": "GMNotes"
             }
         },
         {
@@ -271,6 +287,14 @@
             }
         },
         {
+            "Key": "c10efc42-316d-4e8f-85a6-06b5b7a24c32",
+            "Value": {
+                "id": "081fce67-1d28-4d17-becd-6a20c311fe95",
+                "resourcePath": "extensions\\Easing_and_Tweening\\Easing_and_Tweening.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "c290c22a-2f1f-4f6d-a4ba-8033fe663e4d",
             "Value": {
                 "id": "630cd846-db4e-4998-b9bf-24cd01388cf5",
@@ -338,7 +362,7 @@
             "Key": "e8d012ee-ce39-49ce-90a4-e0e8aa813419",
             "Value": {
                 "id": "e423c012-7068-469a-a32e-6ce4575e623b",
-                "resourcePath": "objects\\oSolid\\oSolid.yy",
+                "resourcePath": "objects\\oPickupBase\\oPickupBase.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -378,7 +402,8 @@
     "script_order": [
         "a683552f-89d6-4d45-bdbe-81befbf4308b",
         "3ca8d942-467e-4c26-83b9-3631548cd887",
-        "d8947c03-41aa-4c81-8853-a7b5a3f3f80e"
+        "d8947c03-41aa-4c81-8853-a7b5a3f3f80e",
+        "31c8feee-2f5a-48e1-b18d-84a0289deb3a"
     ],
     "tutorial": ""
 }
