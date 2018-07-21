@@ -9,28 +9,58 @@ xspeed = move * movespeed;
 yspeed += grav;
 if (yspeed > maxYSpeed) yspeed = maxYSpeed;
 
+if (sign(xspeed) != 0) {
+	image_xscale = sign(xspeed);
+}
+
 // Jumping
-if gamepad_button_check_pressed(global.gamepad, gp_face1){
-	if (place_meeting(x, y + 4, oSolid)) {
+var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom + 1) & tile_index_mask;
+var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + 1) & tile_index_mask;
+if (t1 != 0 || t2 != 0){
+	if gamepad_button_check_pressed(global.gamepad, gp_face1){
 		yspeed += -jumpSpeed;
 	}
 }
 
-// Horizontal Movement
-if (place_meeting(x + xspeed, y, oSolid)) {
-	while (!place_meeting(x + sign(xspeed), y, oSolid)) {
-		x += sign(xspeed);	
-	}
-	xspeed = 0;
-}
-x += xspeed;
-
-// Vertical Movement
-if (place_meeting(x, y + yspeed, oSolid)) {
-	while (!place_meeting(x, y + sign(yspeed), oSolid)) {
-		y += sign(yspeed);	
-	}
-	yspeed = 0;
-}
+// Vertical tilemap collision
 y += yspeed;
+if (yspeed > 0){ // Downward
+	var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom) & tile_index_mask;
+	var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom) & tile_index_mask;
+	
+	if (t1 != 0 || t2 != 0){
+		y = ((bbox_bottom & ~15) - 1) - sprite_bbox_bottom;
+		yspeed = 0;
+	}
+}
+else{ // Upward
+	var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
+	var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top) & tile_index_mask;
+	
+	if (t1 != 0 || t2 != 0){
+		y = ((bbox_top + 16) & ~15) - sprite_bbox_top;
+		yspeed = 0;
+	}
+}
+
+// Horizontal tilemap collision
+x += xspeed;
+if (xspeed > 0){ // Right
+	var t1 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top) & tile_index_mask;
+	var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom) & tile_index_mask;
+	
+	if (t1 != 0 || t2 != 0){
+		x = ((bbox_right & ~15) - 1) - sprite_bbox_right;
+		xspeed = 0;
+	}
+}
+else{ // Left
+	var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top) & tile_index_mask;
+	var t2 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom) & tile_index_mask;
+	
+	if (t1 != 0 || t2 != 0){
+		x = ((bbox_left + 16) & ~15) - sprite_bbox_left;
+		xspeed = 0;
+	}
+}
 

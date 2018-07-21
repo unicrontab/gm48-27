@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "4e5cf846-342b-493a-a8c6-9f4329407ce7",
+            "Value": {
+                "id": "fedac124-4473-4d0d-8f6a-cdef273e0cff",
+                "resourcePath": "sprites\\sPlaceholder\\sPlaceholder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "597967b0-d6c1-4c84-b2f3-c7f61b67f63a",
             "Value": {
                 "id": "7766de0f-e8da-419e-a84d-cd0107f6a502",
@@ -106,7 +114,7 @@
             "Key": "637bd1e4-9fb4-410f-94a2-19add80fae84",
             "Value": {
                 "id": "4c2bb6e7-85a8-4d50-ac4c-79a9f61727ab",
-                "resourcePath": "objects\\object3\\object3.yy",
+                "resourcePath": "objects\\oCamera\\oCamera.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -116,6 +124,14 @@
                 "id": "5d7d9539-aca9-4a57-a906-f23dc98461c6",
                 "resourcePath": "sprites\\sWall\\sWall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "69e77a26-0b33-47c3-8c5c-219ed3a40913",
+            "Value": {
+                "id": "ad5f21ff-eef8-4da2-b8b8-6aecb3238625",
+                "resourcePath": "tilesets\\tsRoomBG\\tsRoomBG.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -156,6 +172,14 @@
                 "id": "e8d4d26b-f878-43ef-b1bf-254fc7794bb2",
                 "resourcePath": "objects\\oMenu\\oMenu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8be4c830-f04e-4504-8055-4359b2625710",
+            "Value": {
+                "id": "65195fe7-3026-488a-8019-70c24daa0269",
+                "resourcePath": "sprites\\sPlayerIdle\\sPlayerIdle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
