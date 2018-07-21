@@ -5,10 +5,10 @@ tilemap = layer_tilemap_get_id("CollisionTiles");
 
 xspeed = 0;
 yspeed = 0;
-maxYSpeed = 30;
-grav = 0.7;
-jumpSpeed = 12;
-movespeed = 8;
+maxYSpeed = 10;
+grav = 0.6;
+jumpSpeed = 10;
+movespeed = 3;
 points = 0;
 lastPoints = 0;
 

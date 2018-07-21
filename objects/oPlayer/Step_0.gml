@@ -9,10 +9,6 @@ xspeed = move * movespeed;
 yspeed += grav;
 if (yspeed > maxYSpeed) yspeed = maxYSpeed;
 
-if (sign(xspeed) != 0) {
-	image_xscale = sign(xspeed);
-}
-
 // Jumping
 var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom + 1) & tile_index_mask;
 var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + 1) & tile_index_mask;
@@ -39,6 +35,7 @@ else{ // Upward
 	
 	if (t1 != 0 || t2 != 0){
 		y = ((bbox_top + 16) & ~15) - sprite_bbox_top;
+		
 		yspeed = 0;
 	}
 }
@@ -64,3 +61,20 @@ else{ // Left
 	}
 }
 
+
+if (sign(yspeed) < 0) {
+	sprite_index = sPlayerJump;
+	image_speed = 0;
+	image_index = 1;
+} else if (sign(yspeed) > 0) {
+	sprite_index = sPlayerFall;
+	image_speed = 0;
+	image_index = 1;
+} else if (sign(xspeed) != 0) {
+	sprite_index = sPlayerRun;
+	image_speed = xspeed / 1.5;
+	image_xscale = sign(xspeed);
+} else {
+	sprite_index = sPlayerIdle;
+	image_speed = 1;
+}
