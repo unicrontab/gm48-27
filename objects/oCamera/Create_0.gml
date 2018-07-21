@@ -3,7 +3,7 @@ window_set_cursor(cr_none);
 
 
 var viewMatrix = matrix_build_lookat(x,y,-10,x,y,0,0,1,0);
-var projectionMatrix = matrix_build_projection_ortho(320, 176, 1, 1000);
+var projectionMatrix = matrix_build_projection_ortho(352, 194, 1, 1000);
 camera_set_view_mat(camera, viewMatrix);
 camera_set_proj_mat(camera, projectionMatrix);
 
