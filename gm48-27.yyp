@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "9a819153-3626-4f40-a317-3d1af3057c09",
+            "Value": {
+                "id": "c3f16990-689d-4634-beed-3992395230ab",
+                "resourcePath": "fonts\\normal\\normal.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "9d07028a-54e6-4c8a-a933-52d11fb2cb71",
             "Value": {
                 "id": "8169bc94-fad4-48c1-84ea-88cbe5c53f91",
@@ -370,7 +378,7 @@
             "Key": "e5f0ee50-732c-4f80-bfe1-b760e39d51ad",
             "Value": {
                 "id": "9405bbde-189d-402e-a26a-ee12a865dc45",
-                "resourcePath": "fonts\\font0\\font0.yy",
+                "resourcePath": "fonts\\Title\\Title.yy",
                 "resourceType": "GMFont"
             }
         },
