@@ -8,7 +8,7 @@ draw_text(camera_get_view_width(view_camera[0]) / 2,
 		  camera_get_view_height(view_camera[0]) / 6 + 145, "Donor");
 		  
 		  
-draw_set_font(normal);
+draw_set_font(block);
 
 draw_text(camera_get_view_width(view_camera[0]) / 2,
 		  camera_get_view_height(view_camera[0]) /2 + 145, "Press Start");
