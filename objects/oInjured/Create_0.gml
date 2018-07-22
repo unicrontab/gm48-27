@@ -3,10 +3,15 @@
 organNeeded = noone;
 organText = noone;
 timer = noone;
+highscore = noone;
 active = false;
 dead = false;
 completed = false;
 canDeliver = false;
+
+if (global.injuredScores[id]){
+	highscore = global.injuredScores[id];
+}
 
 if (ds_map_exists(global.deadInjured, id)){
 	dead = true;

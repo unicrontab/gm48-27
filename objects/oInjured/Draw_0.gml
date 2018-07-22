@@ -16,6 +16,9 @@ if (!dead){
 	else{
 		draw_text_ext_transformed(x + 8,y - 30, "I need a " + organText, 5, 300,0.5,0.5,0);
 	}
+	if (highscore != noone){
+		draw_text_ext_transformed(x + 15,y - 40, "Highscore: " + string(highscore), 5, 300,0.5,0.5,0);
+	}
 }
 
 

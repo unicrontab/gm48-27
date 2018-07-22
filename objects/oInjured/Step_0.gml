@@ -30,6 +30,20 @@ if (distance_to_object(oPlayer) < 10){
 					}
 	
 				}
+				// Increment Score
+				show_debug_message(id);
+				if (global.injuredScores[id]){
+					if (oGameController.countdown > global.injuredScores[id]){
+						score += oGameController.countdown - global.injuredScores[id];
+						global.injuredScores[id] = oGameController.countdown;
+						highscore = oGameController.countdown;
+					}
+				}
+				else{
+					score += oGameController.countdown;
+					global.injuredScores[id] = oGameController.countdown;
+					highscore = oGameController.countdown;
+				}
 			}
 		}
 		
