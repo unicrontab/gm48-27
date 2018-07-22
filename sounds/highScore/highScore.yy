@@ -1,8 +1,8 @@
 {
-    "id": "ef185f0f-528a-45bf-a8b6-0608e83606a9",
+    "id": "7e0d6a05-f5bf-4855-80b7-7c68feb9f339",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "ambientBackground",
+    "name": "highScore",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
@@ -10,5 +10,5 @@
     "preload": false,
     "sampleRate": 44100,
     "type": 0,
-    "volume": 0.68
+    "volume": 1
 }
