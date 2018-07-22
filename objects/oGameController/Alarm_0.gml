@@ -6,7 +6,7 @@ if !paused{
 if countdown > 0{
 	alarm[0] = room_speed;
 }
-if countdown == 0{
+if countdown <= 0{
 	active = false;
 	currentInjured = ds_map_find_first(global.activeInjured);
 	organ = global.activeInjured[? currentInjured];

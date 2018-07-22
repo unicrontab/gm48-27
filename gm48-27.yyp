@@ -199,11 +199,27 @@
             }
         },
         {
+            "Key": "4d51ba76-7cc8-4c43-b2cd-45c80ad9dad5",
+            "Value": {
+                "id": "4bbaf03d-57c9-4fd8-a5b4-0b0927b92baa",
+                "resourcePath": "objects\\oHeartSpawn\\oHeartSpawn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4e5cf846-342b-493a-a8c6-9f4329407ce7",
             "Value": {
                 "id": "fedac124-4473-4d0d-8f6a-cdef273e0cff",
                 "resourcePath": "sprites\\sHeart\\sHeart.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "56748aa8-2f88-49fb-9f59-2ba4b286c05c",
+            "Value": {
+                "id": "a60b95d4-a100-48c4-bd9c-c2562919413d",
+                "resourcePath": "views\\56748aa8-2f88-49fb-9f59-2ba4b286c05c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -260,6 +276,14 @@
                 "id": "a3693d5d-a3b2-44a9-aa5b-bd496b6098e6",
                 "resourcePath": "sounds\\jump\\jump.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "6926e6dd-8563-48dd-8bcd-1e6d9c3629ef",
+            "Value": {
+                "id": "b384933b-bf44-4f8e-a677-4bf330730410",
+                "resourcePath": "objects\\oKidneySpawn\\oKidneySpawn.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -607,6 +631,14 @@
             }
         },
         {
+            "Key": "d90fdb3e-eb23-4d0b-aef8-887ff4c0171f",
+            "Value": {
+                "id": "7f29cd62-4b89-40e5-a5bd-39c64ae7c1e4",
+                "resourcePath": "objects\\oLiverSpawn\\oLiverSpawn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e4daaa62-483d-4338-b33f-1bf5c642e315",
             "Value": {
                 "id": "4cbddc1f-2a19-4069-9612-678d2ab5dcf5",
@@ -620,6 +652,14 @@
                 "id": "4f74d7cc-07d1-41bc-bd15-bf80742c17e2",
                 "resourcePath": "rooms\\donorRoom1\\donorRoom1.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "e6d91f1e-71e7-499b-9903-1bfd59dc8720",
+            "Value": {
+                "id": "7a63305f-9d9f-4b32-a920-2a9db61bfde7",
+                "resourcePath": "objects\\oPlayerRespawn\\oPlayerRespawn.yy",
+                "resourceType": "GMObject"
             }
         },
         {

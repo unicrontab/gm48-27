@@ -119,4 +119,8 @@ else{
 	}
 }
 
-if (y >= room_height -10) room_restart();
+if (y >= room_height -10){
+	oGameController.countdown = 0;
+	x = oPlayerRespawn.x;
+	y = oPlayerRespawn.y;
+}
