@@ -16,11 +16,31 @@ if (!global.transitioning && !oGameController.paused){
 	var jt1 = tilemap_get_at_pixel(jumpThroughTilemap, bbox_left, bbox_bottom + 1) & tile_index_mask;
 	var jt2 = tilemap_get_at_pixel(jumpThroughTilemap, bbox_right, bbox_bottom + 1) & tile_index_mask;
 	
+	//wall jumping
+	var right1 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top + 1) & tile_index_mask;
+	var right2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + 1) & tile_index_mask;
+	var left1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top + 1) & tile_index_mask;
+	var left2 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom + 1) & tile_index_mask;
+	
+	
 	if (t1 != 0 || t2 != 0 || jt1 != 0 || jt2 != 0){
 		if gamepad_button_check_pressed(global.gamepad, gp_face1){
 			yspeed += -jumpSpeed;
 		}
 	}
+	else if (right1 != 0 || right2 != 0 || left1 != 0 || left2 != 0){
+		if gamepad_button_check_pressed(global.gamepad, gp_face1){
+			yspeed += -jumpSpeed;
+			xspeed -= wallJumpSpeed;
+		}
+	}
+	else if (canDoubleJump){
+		if gamepad_button_check_pressed(global.gamepad, gp_face1){
+			canDoubleJump = false;
+			yspeed += -doubleJumpSpeed;
+		}
+	}
+		
 
 	// Vertical tilemap collision
 	y += yspeed;
@@ -33,6 +53,7 @@ if (!global.transitioning && !oGameController.paused){
 		if (t1 != 0 || t2 != 0 || jt1 != 0 || jt2 != 0){
 			y = ((bbox_bottom & ~15) - 0.6) - sprite_bbox_bottom;
 			yspeed = 0;
+			canDoubleJump = true;
 		}
 	}
 	else{ // Upward
