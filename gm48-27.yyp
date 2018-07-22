@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "f10f0452-7836-48e0-a6ec-efb0eb8c2497",
+            "Value": {
+                "id": "1c3ab00e-f40f-4836-a2df-aedbc9c37843",
+                "resourcePath": "sprites\\sLockedDoor\\sLockedDoor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f2f2ef22-219a-44f5-ad7c-faf613a61b1c",
             "Value": {
                 "id": "45b4fd1f-0daf-491e-b1e4-8152da3b07bb",
