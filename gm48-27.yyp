@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "f0c942d3-6a73-4577-95b7-87bf1c8aab1b",
+            "Value": {
+                "id": "4161e779-f6af-4c5c-b1f2-7d94579230f1",
+                "resourcePath": "sprites\\sInjuredDead\\sInjuredDead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f10f0452-7836-48e0-a6ec-efb0eb8c2497",
             "Value": {
                 "id": "1c3ab00e-f40f-4836-a2df-aedbc9c37843",
