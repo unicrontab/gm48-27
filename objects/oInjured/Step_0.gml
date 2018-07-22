@@ -20,6 +20,7 @@ if (distance_to_object(oPlayer) < 10){
 				active = true;
 			}
 			if (canDeliver){
+				audio_play_sound(success, 100, false);
 				oGameController.active = false;
 				oGameController.completeInjured += 1;
 				oGameController.alarm[0] = 0;
@@ -38,12 +39,14 @@ if (distance_to_object(oPlayer) < 10){
 				show_debug_message(id);
 				if (global.injuredScores[id]){
 					if (oGameController.countdown > global.injuredScores[id]){
+						audio_play_sound(highScore, 100, false);
 						score += oGameController.countdown - global.injuredScores[id];
 						global.injuredScores[id] = oGameController.countdown;
 						highscore = oGameController.countdown;
 					}
 				}
 				else{
+					audio_play_sound(highScore, 100, false);
 					score += oGameController.countdown;
 					global.injuredScores[id] = oGameController.countdown;
 					highscore = oGameController.countdown;
