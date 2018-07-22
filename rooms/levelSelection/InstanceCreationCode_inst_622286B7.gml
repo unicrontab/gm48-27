@@ -1,4 +1,4 @@
-nextRoom = level4;
-requiredScore = 30;
-totalInjured = 1;
+nextRoom = level6;
+requiredScore = 50;
+totalInjured = 2;
 completeInjured = 0;

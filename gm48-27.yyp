@@ -807,6 +807,14 @@
             }
         },
         {
+            "Key": "f33af72a-1a1e-4879-af06-5fa8ca9b8964",
+            "Value": {
+                "id": "0f9c578d-f546-414b-9be0-2e1898be3443",
+                "resourcePath": "rooms\\donorRoom62\\donorRoom62.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "f35f457a-b1c8-4e18-bd16-822dce7c5ba6",
             "Value": {
                 "id": "78d93f01-88bc-4749-82d9-ff105d954e73",

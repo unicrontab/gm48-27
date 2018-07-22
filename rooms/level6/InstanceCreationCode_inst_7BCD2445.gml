@@ -1,1 +1,1 @@
-nextRoom = donorRoom3;
+nextRoom = donorRoom6;

@@ -1,3 +1,3 @@
-organNeeded =  "oHeart";
-organText = "heart";
+organNeeded =  "oLiver";
+organText = "liver";
 timer = 20;
