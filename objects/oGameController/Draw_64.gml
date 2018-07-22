@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-currentRoomScore = global.roomScores[room];
-if (currentRoomScore == noone) currentRoomScore = 0;
-
 draw_sprite_ext(
 	sHealth,
 	1,

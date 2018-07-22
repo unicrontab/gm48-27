@@ -16,3 +16,4 @@ else{
 
 // Reset all room positions after level complete
 ds_map_clear(global.roomPositions);
+ds_map_clear(global.deadInjured);
