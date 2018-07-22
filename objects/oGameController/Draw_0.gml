@@ -7,6 +7,6 @@ draw_set_font(Title);
 var vx = oCamera.x - 150;
 var vy = oCamera.y - 90;
 
-if countdown != noone {
+if countdown != noone && active {
 	draw_text(oPlayer.x, oPlayer.y - 40, string(countdown));
 }

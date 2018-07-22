@@ -32,6 +32,7 @@ show_debug_message(global.blue);
 
 global.roomPositions = ds_map_create();
 global.activeInjured = ds_map_create();
+global.deadInjured = ds_map_create();
 global.organsToSpawn = ds_list_create();
 global.Inventory = ds_list_create();
 global.roomScores = array_create(20, noone);
