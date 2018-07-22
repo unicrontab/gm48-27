@@ -13,8 +13,8 @@ movespeed = 2;
 points = 0;
 lastPoints = 0;
 
-if (ds_map_exists(global.roomPosotions, room_get_name(room))){
-	pos = global.roomPosotions[? room_get_name(room)];
+if (ds_map_exists(global.roomPositions, room_get_name(room))){
+	pos = global.roomPositions[? room_get_name(room)];
 	x = pos[0];
 	y = pos[1];
 }	

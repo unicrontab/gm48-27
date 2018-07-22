@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "020b5a41-bc8a-400c-8f96-4ec002d53c6e",
+            "Value": {
+                "id": "0c197bb4-7bb2-45c2-8710-9cb6e0ea9344",
+                "resourcePath": "sprites\\sHealth\\sHealth.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08815d0d-53ed-4f16-8755-032f760bb8f6",
             "Value": {
                 "id": "660e10e6-ce30-415f-8d01-ae6d2996eecf",
