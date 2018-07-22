@@ -16,6 +16,7 @@ if (distance_to_object(oPlayer) < 10 and score >= requiredScore){
 	}
 }
 
-if (score <= requiredScore) {
+if (score < requiredScore) {
+	draw_text_ext_transformed(x + 8,y - 30, "requires " + string(requiredScore) + " points", 5, 300,0.5,0.5,0);
 	draw_self();	
 }
