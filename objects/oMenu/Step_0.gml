@@ -1,7 +1,7 @@
 /// @description Menu Input
 
 if gamepad_button_check(global.gamepad, gp_start){
-	targetRoom = level1;
+	targetRoom = levelSelection;
 
 	if !instance_exists(oRoomTransition){
 		roomFade = instance_create_layer(x,y,"Transitions",oRoomTransition);
@@ -11,7 +11,7 @@ if gamepad_button_check(global.gamepad, gp_start){
 
 if gamepad_button_check_pressed(global.gamepad, gp_face1){
 	if (selected == 1) {
-		targetRoom = level1;
+		targetRoom = levelSelection;
 
 		if !instance_exists(oRoomTransition){
 			roomFade = instance_create_layer(x,y,"Transitions",oRoomTransition);
