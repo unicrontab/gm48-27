@@ -1,6 +1,10 @@
 /// @description Menu Input
 
-if gamepad_button_check(global.gamepad, gp_start){
+keyUp =  keyboard_check_pressed(188) + keyboard_check_pressed(ord("W")) + keyboard_check_pressed(vk_up);
+keyDown = keyboard_check_pressed(ord("S")) + keyboard_check_pressed(ord("O")) + keyboard_check_pressed(vk_down);
+keyEnter = keyboard_check(vk_enter);
+
+if gamepad_button_check(global.gamepad, gp_start) {
 	targetRoom = levelSelection;
 
 	if !instance_exists(oRoomTransition){
@@ -9,7 +13,7 @@ if gamepad_button_check(global.gamepad, gp_start){
 	}
 }
 
-if gamepad_button_check_pressed(global.gamepad, gp_face1){
+if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyEnter {
 	if (selected == 1) {
 		targetRoom = levelSelection;
 
@@ -35,5 +39,11 @@ if (global.gamepad != noone) {
 	} else if (lv_axis < 0 && selected > 1){
 		selected -= 1;	
 	}
+}
+
+if (keyDown && selected < options) {
+	selected += 1;
+} else if (keyUp && selected > 1) {
+	selected -= 1;	
 }
 

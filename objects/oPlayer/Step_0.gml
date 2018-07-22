@@ -1,8 +1,12 @@
 /// @description Movement
+keyLeft = keyboard_check(ord("A")) + keyboard_check(vk_left);
+keyRight = keyboard_check(ord("E")) + keyboard_check(ord("D")) + keyboard_check(vk_right);
+keyUp = keyboard_check_pressed(188) + keyboard_check_pressed(ord("W")) + keyboard_check_pressed(vk_up);
+move = keyRight - keyLeft;
 
 if (global.gamepad != noone) {
 	lh_axis = gamepad_axis_value(global.gamepad, gp_axislh);
-	move = lh_axis;
+	move = lh_axis + keyRight - keyLeft;
 }
 
 if (!global.transitioning && !oGameController.paused){
@@ -24,18 +28,18 @@ if (!global.transitioning && !oGameController.paused){
 	
 	
 	if (t1 != 0 || t2 != 0 || jt1 != 0 || jt2 != 0){
-		if gamepad_button_check_pressed(global.gamepad, gp_face1){
+		if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp {
 			yspeed += -jumpSpeed;
 		}
 	}
 	else if (right1 != 0 || right2 != 0 || left1 != 0 || left2 != 0){
-		if gamepad_button_check_pressed(global.gamepad, gp_face1){
+		if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp {
 			yspeed += -jumpSpeed;
 			xspeed -= wallJumpSpeed;
 		}
 	}
 	else if (canDoubleJump){
-		if gamepad_button_check_pressed(global.gamepad, gp_face1){
+		if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp {
 			canDoubleJump = false;
 			yspeed += -doubleJumpSpeed;
 		}

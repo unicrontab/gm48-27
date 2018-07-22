@@ -1,3 +1,3 @@
 organNeeded =  "oHeart";
 organText = "heart";
-timer = 15;
+timer = 20;

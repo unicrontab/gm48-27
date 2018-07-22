@@ -1,7 +1,7 @@
 /// @description Instantiate Inventory Items
 for(var i = 0; i<ds_list_size(global.organsToSpawn);i++){
 	organ = ds_list_find_value(global.organsToSpawn,i);
-	inst = instance_create_layer(320, 288, "Instances", asset_get_index(organ));
+	inst = instance_create_layer(550, 215, "Instances", asset_get_index(organ));
 	ds_list_delete(global.organsToSpawn,i);
 }
 
