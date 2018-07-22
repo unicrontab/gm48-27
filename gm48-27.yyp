@@ -735,6 +735,14 @@
             }
         },
         {
+            "Key": "f6f6905a-b864-4e00-94fe-2812bbcd6fd1",
+            "Value": {
+                "id": "93aae77b-67e5-482b-8443-0857f5312a16",
+                "resourcePath": "sprites\\xPad\\xPad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f92863ee-0d08-4872-ba9e-bf9a79c88a13",
             "Value": {
                 "id": "543a5d35-0ffe-4d26-a312-82787c153bf8",
