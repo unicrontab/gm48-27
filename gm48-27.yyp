@@ -703,6 +703,14 @@
             }
         },
         {
+            "Key": "ef185f0f-528a-45bf-a8b6-0608e83606a9",
+            "Value": {
+                "id": "2aad27f5-834b-4c88-a914-500021a1590d",
+                "resourcePath": "sounds\\ambientBackground\\ambientBackground.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f10f0452-7836-48e0-a6ec-efb0eb8c2497",
             "Value": {
                 "id": "1c3ab00e-f40f-4836-a2df-aedbc9c37843",
