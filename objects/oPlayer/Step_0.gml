@@ -5,7 +5,7 @@ if (global.gamepad != noone) {
 	move = lh_axis;
 }
 
-if (!global.transitioning){
+if (!global.transitioning && !oGameController.paused){
 	xspeed = move * movespeed;
 	yspeed += grav;
 	if (yspeed > maxYSpeed) yspeed = maxYSpeed;
@@ -13,7 +13,10 @@ if (!global.transitioning){
 	// Jumping
 	var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom + 1) & tile_index_mask;
 	var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom + 1) & tile_index_mask;
-	if (t1 != 0 || t2 != 0){
+	var jt1 = tilemap_get_at_pixel(jumpThroughTilemap, bbox_left, bbox_bottom + 1) & tile_index_mask;
+	var jt2 = tilemap_get_at_pixel(jumpThroughTilemap, bbox_right, bbox_bottom + 1) & tile_index_mask;
+	
+	if (t1 != 0 || t2 != 0 || jt1 != 0 || jt2 != 0){
 		if gamepad_button_check_pressed(global.gamepad, gp_face1){
 			yspeed += -jumpSpeed;
 		}
@@ -24,8 +27,10 @@ if (!global.transitioning){
 	if (yspeed > 0){ // Downward
 		var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom) & tile_index_mask;
 		var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom) & tile_index_mask;
+		var jt1 = tilemap_get_at_pixel(jumpThroughTilemap, bbox_left, bbox_bottom) & tile_index_mask;
+		var jt2 = tilemap_get_at_pixel(jumpThroughTilemap, bbox_right, bbox_bottom) & tile_index_mask;
 	
-		if (t1 != 0 || t2 != 0){
+		if (t1 != 0 || t2 != 0 || jt1 != 0 || jt2 != 0){
 			y = ((bbox_bottom & ~15) - 0.6) - sprite_bbox_bottom;
 			yspeed = 0;
 		}
@@ -63,7 +68,7 @@ if (!global.transitioning){
 	} 
 }
 
-if (global.transitioning){
+if (global.transitioning || oGameController.paused){
 	image_speed = 0;
 }
 else{

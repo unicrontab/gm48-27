@@ -2,6 +2,7 @@
 
 // ON CREATE OBJECT
 tilemap = layer_tilemap_get_id("CollisionTiles");
+jumpThroughTilemap = layer_tilemap_get_id("JumpThroughTiles");
 
 xspeed = 0;
 yspeed = 0;

@@ -1,2 +1,0 @@
-organNeeded =  "oHeart";
-organText = "heart";

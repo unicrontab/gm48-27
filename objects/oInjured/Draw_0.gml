@@ -20,11 +20,12 @@ if (distance_to_object(oPlayer) < 10){
 		ds_map_add(global.activeInjured, id, organNeeded);
 		if (!active){
 			ds_list_add(global.organsToSpawn, organNeeded);
-			oGameController.countdown = 60;
+			oGameController.countdown = timer;
 			oGameController.alarm[0] = room_speed;
 			active = true;
 		}
 		if (canDeliver){
+			oGameController.completeInjured++;
 			oGameController.countdown = noone;
 			oGameController.alarm[0] = 0;
 			completed = true;
@@ -36,6 +37,9 @@ if (distance_to_object(oPlayer) < 10){
 					instance_destroy(asset_get_index(item));
 				}
 	
+			}
+			if (oGameController.completeInjured == oGameController.totalInjured){
+				oGameController.alarm[1] = room_speed * 3;
 			}
 		}
 		
