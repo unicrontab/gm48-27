@@ -5,8 +5,7 @@ draw_set_valign(fa_middle);
 
 if (oMenu.selected != noone && oMenu.selected == selectionId) {
 	draw_set_color(global.colors[16]);
-	draw_rectangle(x-40,y-7,x+40, y+7,false)
-	draw_set_color(global.colors[5]);
+	draw_sprite(sHeart,1,x-30,y);
 } else {
 	
 	
