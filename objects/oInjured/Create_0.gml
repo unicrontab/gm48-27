@@ -3,6 +3,7 @@
 organNeeded = noone;
 organText = noone;
 active = false;
+completed = false;
 canDeliver = false;
 if (ds_map_exists(global.activeInjured, id)){
 	active = true;

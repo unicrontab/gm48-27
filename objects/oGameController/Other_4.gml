@@ -7,9 +7,10 @@ for(var i = 0; i<ds_list_size(global.organsToSpawn);i++){
 
 for(var i = 0; i<ds_list_size(global.Inventory);i++){
 	item = ds_list_find_value(global.Inventory,i);
+	
 	if (instance_exists(oInjured)){
 		if (item == oInjured.organNeeded){
-			show_debug_message("great success");
+			oInjured.canDeliver = true;
 		}
 	}
 	
