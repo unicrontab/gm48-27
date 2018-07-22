@@ -25,4 +25,10 @@ if (!dead){
 }
 
 
+if (!dead && !completed && (!active || canDeliver) && distance_to_object(oPlayer) < 10) {
+	if (global.gamepad != noone) draw_sprite_ext(xPad, 1, x + 8, y - 30,1,1,image_angle,c_white,1);
+	if (global.gamepad == noone) draw_text_ext_transformed(x + 8,y + 10, "Press Enter", 5, 300,0.5,0.5,0);
+}
+
+
 draw_self();
