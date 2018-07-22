@@ -4,6 +4,7 @@ keyEnter = keyboard_check_pressed(vk_enter);
 
 if (!dead && ds_map_exists(global.deadInjured, id)){
 	dead = true;
+	sprite_index =sInjuredDead;
 }
 
 if (distance_to_object(oPlayer) < 10){
