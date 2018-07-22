@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "352f33e1-a3b8-4aa5-a300-716a383c62aa",
+            "Value": {
+                "id": "219ffab9-7da5-49d7-bff7-2dc54e126272",
+                "resourcePath": "rooms\\level3\\level3.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3c93ffbc-8410-4de2-b815-ae58d02ee0e5",
             "Value": {
                 "id": "595eaccd-939d-4867-b047-3b923c5661eb",
@@ -779,6 +787,14 @@
             "Value": {
                 "id": "45b4fd1f-0daf-491e-b1e4-8152da3b07bb",
                 "resourcePath": "rooms\\level1\\level1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "f35f457a-b1c8-4e18-bd16-822dce7c5ba6",
+            "Value": {
+                "id": "78d93f01-88bc-4749-82d9-ff105d954e73",
+                "resourcePath": "rooms\\donorRoom3\\donorRoom3.yy",
                 "resourceType": "GMRoom"
             }
         },
