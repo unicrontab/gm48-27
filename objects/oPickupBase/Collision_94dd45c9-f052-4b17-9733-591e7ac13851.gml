@@ -2,10 +2,9 @@
 // You can write your code in this editor
 
 if (followTarget == noone){
-	oGameController.countdown = 10;
-	oGameController.alarm[0] = room_speed;
 	followTarget = oPlayer;
-
-	offset = oGameController.itemCount;
-	oGameController.itemCount++;
+	
+	offset = ds_map_size(global.Inventory);
+	ds_list_add(global.Inventory, object_get_name(object_index));
+	//ds_map_add(global.Inventory, object_get_name(object_index), title);
 }

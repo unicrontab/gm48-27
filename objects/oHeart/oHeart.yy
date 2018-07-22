@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oHeart",
     "eventList": [
-        
+        {
+            "id": "deb07d32-1e5a-4c34-9e80-965b69b40cb6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d1db0ee4-9740-4c63-9c91-7b4a30460316"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

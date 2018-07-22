@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+title = noone;
 
 scaleDir = 1;
 startX = x;
