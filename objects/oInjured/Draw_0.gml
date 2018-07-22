@@ -18,7 +18,7 @@ else{
 if (distance_to_object(oPlayer) < 10){
 	if gamepad_button_check_pressed(global.gamepad, gp_face3){
 		ds_map_add(global.activeInjured, id, organNeeded);
-		if (!active){
+		if (!active && !completed){
 			ds_list_add(global.organsToSpawn, organNeeded);
 			oGameController.countdown = timer;
 			oGameController.alarm[0] = room_speed;
@@ -26,9 +26,9 @@ if (distance_to_object(oPlayer) < 10){
 		}
 		if (canDeliver){
 			oGameController.completeInjured++;
-			oGameController.countdown = noone;
 			oGameController.alarm[0] = 0;
 			completed = true;
+			ds_map_delete(global.activeInjured, id);
 			for(var i = 0; i<ds_list_size(global.Inventory);i++){
 				item = ds_list_find_value(global.Inventory,i);
 	
