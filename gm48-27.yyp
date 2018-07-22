@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "8285b524-30f0-4b01-aa68-ec95061b34f4",
+            "Value": {
+                "id": "4051023e-9ae0-41c9-936a-bd09140a74f6",
+                "resourcePath": "rooms\\donorRoom2\\donorRoom2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "8ae0abab-6577-4995-a530-0965e6b9f6d8",
             "Value": {
                 "id": "5ec3bde7-f179-4e3d-8c06-7e3006742325",
