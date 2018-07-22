@@ -6,7 +6,8 @@ keyEnter = keyboard_check_pressed(vk_enter);
 
 if (distance_to_object(oPlayer) < 10 && score >= requiredScore && !donateRoomLocked){
 	if (global.gamepad != noone) {
-		draw_text_ext_transformed(x + 8,y - 30, "X to Enter", 5, 300,0.5,0.5,0);
+		// draw_text_ext_transformed(x + 8,y - 30, "X to Enter", 5, 300,0.5,0.5,0);
+		draw_sprite_ext(xPad, 1, x + 8, y - 25,1,1,image_angle,c_white,1)
 	} else {
 		draw_text_ext_transformed(x + 8,y - 30, "Press Enter", 5, 300,0.5,0.5,0);	
 	}
