@@ -9,6 +9,7 @@ if (!dead && ds_map_exists(global.deadInjured, id)){
 if (distance_to_object(oPlayer) < 10){
 	if gamepad_button_check_pressed(global.gamepad, gp_face3) || keyEnter{
 		if (!dead){
+			
 			if (!active && !completed && ds_map_size(global.activeInjured) == 0){
 				ds_map_add(global.activeInjured, id, organNeeded);
 				ds_list_add(global.organsToSpawn, organNeeded);

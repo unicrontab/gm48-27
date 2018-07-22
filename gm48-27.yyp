@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "18d19a3b-17a8-464f-a11a-5a17d9da2d60",
+            "Value": {
+                "id": "58a0b09b-c818-4b60-aad4-e0a31ed17078",
+                "resourcePath": "sprites\\whiteParticle\\whiteParticle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1cadd9bb-0922-47f9-99a5-3c07e6cf9548",
             "Value": {
                 "id": "04621ac2-105e-4ef2-a909-de69edf1cccf",
@@ -132,6 +140,14 @@
                 "id": "f6c8727b-1419-4771-b5c6-3e6d0fef7146",
                 "resourcePath": "views\\26d1b574-3417-4e29-af57-63956b74594e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "288ef697-b021-45e4-92a8-4abcbb995568",
+            "Value": {
+                "id": "6ba7d354-22a5-4176-92e1-1f1a29d4ee6d",
+                "resourcePath": "objects\\particle\\particle.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -515,6 +531,14 @@
             "Value": {
                 "id": "e2857c32-7b77-48cd-a0f8-5df47a214b1f",
                 "resourcePath": "objects\\oGameController\\oGameController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b2ca1c60-57f1-410c-b206-d9b9f84b0c6f",
+            "Value": {
+                "id": "41f3a97b-7935-4c44-89a8-10e53ff71b43",
+                "resourcePath": "objects\\smoke\\smoke.yy",
                 "resourceType": "GMObject"
             }
         },
