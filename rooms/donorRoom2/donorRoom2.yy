@@ -2,7 +2,7 @@
 {
     "name": "donorRoom2",
     "id": "8285b524-30f0-4b01-aa68-ec95061b34f4",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,

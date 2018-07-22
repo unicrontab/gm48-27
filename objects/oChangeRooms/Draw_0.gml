@@ -2,16 +2,6 @@
 // You can write your code in this editor
 draw_set_color(global.colors[16]);
 draw_set_font(block);
-donateRoomLocked = false;
-if (instance_exists(oGameController)){
-	if (oGameController.completeInjured == oGameController.totalInjured) {
-		donateRoomLocked = true;	
-	}
-}
-show_debug_message("---------");
-show_debug_message(string(oGameController.completeInjured));
-show_debug_message(string(oGameController.totalInjured));
-show_debug_message(string(donateRoomLocked));
 
 if (distance_to_object(oPlayer) < 10 and score >= requiredScore && !donateRoomLocked){
 	draw_text_ext_transformed(x + 8,y - 30, "X to Enter", 5, 300,0.5,0.5,0);
