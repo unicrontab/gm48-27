@@ -9,9 +9,14 @@ yspeed = 0;
 maxYSpeed = 10;
 grav = 0.15;
 jumpSpeed = 4;
-wallJumpSpeed = 3;
+
+wallJumpSpeed = 10;
 doubleJumpSpeed = 3;
 canDoubleJump = true;
+canWallJump = true;
+wallJumping = false;
+disableJoystick = false;
+
 movespeed = 2;
 points = 0;
 lastPoints = 0;
