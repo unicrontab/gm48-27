@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "3bd84d13-aec1-4f43-8df4-7dd9d0a88263",
+            "Value": {
+                "id": "e38def8f-784b-4f99-ad6e-e8c2d10df06d",
+                "resourcePath": "rooms\\donorRoom7\\donorRoom7.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3c93ffbc-8410-4de2-b815-ae58d02ee0e5",
             "Value": {
                 "id": "595eaccd-939d-4867-b047-3b923c5661eb",
@@ -252,6 +260,14 @@
                 "id": "fedac124-4473-4d0d-8f6a-cdef273e0cff",
                 "resourcePath": "sprites\\sHeart\\sHeart.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "52af5e38-203c-480c-9eb6-fd49598ab49d",
+            "Value": {
+                "id": "77e7240e-58ce-4733-97b0-ecdbf8cf5421",
+                "resourcePath": "rooms\\level7\\level7.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
