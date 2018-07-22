@@ -1,2 +1,2 @@
-nextRoom = level2;
+nextRoom = level4;
 requiredScore = 0;
