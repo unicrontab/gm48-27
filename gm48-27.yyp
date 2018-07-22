@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "29d040a3-50a9-4343-b54d-818324b5900b",
+            "Value": {
+                "id": "0d8cbb11-83a9-414b-851c-030c719e557e",
+                "resourcePath": "rooms\\donorRoom4\\donorRoom4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2d1ea80c-da81-48fc-8d6f-79653a248931",
             "Value": {
                 "id": "d5b418d4-5442-4ace-86cd-c79596dff7da",
@@ -388,6 +396,14 @@
                 "id": "74072eb3-be55-4627-ac63-a6c09ef6f66c",
                 "resourcePath": "objects\\oRoomTransition\\oRoomTransition.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7ca94d44-478a-46dc-b0b1-b16a8f99f790",
+            "Value": {
+                "id": "621c4e2c-1d3b-42eb-ba2f-f285f0bcf783",
+                "resourcePath": "rooms\\level4\\level4.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
