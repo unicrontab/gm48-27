@@ -13,3 +13,6 @@ else{
 	score += countdown;
 	global.roomScores[room] = countdown;
 }
+
+// Reset all room positions after level complete
+ds_map_clear(global.roomPositions);
