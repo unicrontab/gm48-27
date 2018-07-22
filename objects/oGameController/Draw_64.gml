@@ -27,3 +27,4 @@ draw_text_ext_transformed(
 	image_angle);
 	
 draw_set_halign(fa_center);
+

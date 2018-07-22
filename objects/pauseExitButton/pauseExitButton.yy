@@ -1,38 +1,28 @@
 {
-    "id": "b4e5d761-d7ee-4574-a367-eff9a7a4960f",
+    "id": "13b6a8ef-d1d8-4e53-9c3e-dd21b9c47dd2",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "pauseScreen",
+    "name": "pauseExitButton",
     "eventList": [
         {
-            "id": "7d16e9e3-6f33-4e9c-b003-5380713289a3",
+            "id": "71995d19-96ce-425b-8146-12ac794054a3",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "b4e5d761-d7ee-4574-a367-eff9a7a4960f"
+            "m_owner": "13b6a8ef-d1d8-4e53-9c3e-dd21b9c47dd2"
         },
         {
-            "id": "8d67e920-66fb-4397-a234-bb36b2f44162",
+            "id": "03314f9e-99c1-40a0-a58a-5f8f6c92cb63",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 1,
-            "m_owner": "b4e5d761-d7ee-4574-a367-eff9a7a4960f"
-        },
-        {
-            "id": "50dc9edd-c795-43d6-ada8-c47b9c1cf24c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "b4e5d761-d7ee-4574-a367-eff9a7a4960f"
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "13b6a8ef-d1d8-4e53-9c3e-dd21b9c47dd2"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

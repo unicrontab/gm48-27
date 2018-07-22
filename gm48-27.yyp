@@ -95,6 +95,22 @@
             }
         },
         {
+            "Key": "13b6a8ef-d1d8-4e53-9c3e-dd21b9c47dd2",
+            "Value": {
+                "id": "8b66bac7-8af7-44d7-a7c7-74a08be30187",
+                "resourcePath": "objects\\pauseExitButton\\pauseExitButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "14588de9-a21b-413f-a19b-6d6c684ef8de",
+            "Value": {
+                "id": "5241f72d-7074-43fe-8b05-b8775653eb61",
+                "resourcePath": "objects\\pauseContinueButton\\pauseContinueButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "15a33689-5b4c-4de2-a81d-518e73ea4883",
             "Value": {
                 "id": "550ac517-607d-4124-823a-c2cf633aef06",
