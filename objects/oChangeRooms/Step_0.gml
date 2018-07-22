@@ -3,5 +3,7 @@
 
 
 if (!donateRoomLocked && oGameController.completeInjured == oGameController.totalInjured) {
-	donateRoomLocked = true;	
+	if (oGameController.totalInjured != noone){
+		donateRoomLocked = true;
+	}
 }
