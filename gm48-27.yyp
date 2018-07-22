@@ -663,6 +663,14 @@
             }
         },
         {
+            "Key": "f96b73d9-168c-4e1e-a9cc-9b84df22f39b",
+            "Value": {
+                "id": "4dedb7d3-2efb-4874-ad3c-5ed3bfcf0bd3",
+                "resourcePath": "objects\\helpDisplay\\helpDisplay.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fc67d2d8-92dd-47bf-9276-3e97a0513dd2",
             "Value": {
                 "id": "22126f9f-e368-4e19-853c-f3d9b46a3ab7",
