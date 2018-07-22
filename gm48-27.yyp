@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "639b9a6d-a4ad-40eb-808b-61b266f9c29f",
+            "Value": {
+                "id": "93612f53-9c74-4413-b04e-8d5cf728f249",
+                "resourcePath": "sprites\\sWallSlide\\sWallSlide.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "643e2bc7-db8d-428b-9f39-d76dbab5dddb",
             "Value": {
                 "id": "064b5a74-782d-4056-b8f9-a13b33747112",

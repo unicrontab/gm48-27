@@ -11,6 +11,7 @@ grav = 0.15;
 jumpSpeed = 4;
 
 wallJumpSpeed = 10;
+wallSliding = false;
 doubleJumpSpeed = 3;
 canDoubleJump = true;
 canWallJump = true;
