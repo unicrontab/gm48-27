@@ -59,6 +59,7 @@ if (!global.transitioning && !oGameController.paused){
 	
 		if (t1 != 0 || t2 != 0 || jt1 != 0 || jt2 != 0){
 			y = ((bbox_bottom & ~15) - 0.6) - sprite_bbox_bottom;
+
 			yspeed = 0;
 			canDoubleJump = true;
 		}
