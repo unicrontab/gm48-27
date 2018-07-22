@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "2d1ea80c-da81-48fc-8d6f-79653a248931",
+            "Value": {
+                "id": "d5b418d4-5442-4ace-86cd-c79596dff7da",
+                "resourcePath": "sounds\\teleport\\teleport.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "31c8feee-2f5a-48e1-b18d-84a0289deb3a",
             "Value": {
                 "id": "0e904976-cf0d-40dd-a1a6-29161c02e6fe",
@@ -223,6 +231,14 @@
             }
         },
         {
+            "Key": "643e2bc7-db8d-428b-9f39-d76dbab5dddb",
+            "Value": {
+                "id": "064b5a74-782d-4056-b8f9-a13b33747112",
+                "resourcePath": "sounds\\select\\select.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "64592f75-e16c-420a-bc7b-71c11c5d2682",
             "Value": {
                 "id": "848bf18f-4260-4d20-b83b-64ab5b80f820",
@@ -236,6 +252,14 @@
                 "id": "5d7d9539-aca9-4a57-a906-f23dc98461c6",
                 "resourcePath": "sprites\\sWall\\sWall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "66647ca0-8229-436d-b8db-ee6da9a33113",
+            "Value": {
+                "id": "a3693d5d-a3b2-44a9-aa5b-bd496b6098e6",
+                "resourcePath": "sounds\\jump\\jump.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -260,6 +284,14 @@
                 "id": "a3416c00-4c9c-4f6d-b4d0-75b9d07fc790",
                 "resourcePath": "objects\\levelDisplay\\levelDisplay.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6e83dfa1-9142-4c5a-917d-f020e368c283",
+            "Value": {
+                "id": "f059c63b-aeab-4625-a423-d39028641e64",
+                "resourcePath": "sounds\\tickTock\\tickTock.yy",
+                "resourceType": "GMSound"
             }
         },
         {

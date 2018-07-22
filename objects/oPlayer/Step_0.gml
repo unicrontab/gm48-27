@@ -30,16 +30,19 @@ if (!global.transitioning && !oGameController.paused){
 	if (t1 != 0 || t2 != 0 || jt1 != 0 || jt2 != 0){
 		if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp {
 			yspeed += -jumpSpeed;
+			audio_play_sound(jump, 10, false);
 		}
 	}
 	else if (right1 != 0 || right2 != 0 || left1 != 0 || left2 != 0){
 		if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp {
+			audio_play_sound(jump, 10, false);
 			yspeed += -jumpSpeed;
 			xspeed -= wallJumpSpeed;
 		}
 	}
 	else if (canDoubleJump){
 		if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp {
+			audio_play_sound(jump, 10, false);
 			canDoubleJump = false;
 			yspeed += -doubleJumpSpeed;
 		}

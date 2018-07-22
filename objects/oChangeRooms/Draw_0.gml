@@ -12,12 +12,11 @@ if (distance_to_object(oPlayer) < 10 && score >= requiredScore && !donateRoomLoc
 	}
 	
 	if gamepad_button_check_pressed(global.gamepad, gp_face3) || keyEnter{
+		audio_play_sound(teleport, 10, false);
 		if (totalInjured != noone && completeInjured != noone){
 			oGameController.totalInjured = totalInjured;
 			oGameController.completeInjured = completeInjured;
 		}
-		
-
 		pos[0] = oPlayer.x;
 		pos[1] = oPlayer.y;
 		ds_map_replace(global.roomPositions, room_get_name(room), pos);

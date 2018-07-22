@@ -4,7 +4,6 @@ draw_set_valign(fa_middle);
 if (pauseScreen.selected != noone && pauseScreen.selected == selectionId) {
 	draw_set_color(global.colors[16]);
 	draw_sprite_ext(sHeart,1,x - 150,y, 8.0, 8.0, image_angle, c_white, 1);
-	show_debug_message("continue is active");
 } else {
 	draw_set_color(global.colors[16]);
 }

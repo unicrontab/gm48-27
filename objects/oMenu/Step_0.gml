@@ -14,6 +14,7 @@ if gamepad_button_check(global.gamepad, gp_start) {
 }
 
 if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyEnter {
+	audio_play_sound(select, 10, false);
 	if (selected == 1) {
 		targetRoom = levelSelection;
 
@@ -35,15 +36,19 @@ if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyEnter {
 if (global.gamepad != noone) {
 	lv_axis = gamepad_axis_value(global.gamepad, gp_axislv);
 	if (lv_axis > 0 && selected < options) {
+		audio_play_sound(select, 10, false);
 		selected += 1;
 	} else if (lv_axis < 0 && selected > 1){
+		audio_play_sound(select, 10, false);
 		selected -= 1;	
 	}
 }
 
 if (keyDown && selected < options) {
+	audio_play_sound(select, 10, false);
 	selected += 1;
 } else if (keyUp && selected > 1) {
+	audio_play_sound(select, 10, false);
 	selected -= 1;	
 }
 
