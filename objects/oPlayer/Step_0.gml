@@ -90,3 +90,5 @@ else{
 		image_speed = 1;
 	}
 }
+
+if (y >= room_height -10) room_restart();

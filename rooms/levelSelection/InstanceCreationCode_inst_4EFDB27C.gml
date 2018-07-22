@@ -1,0 +1,1 @@
+nextRoom = level1;
