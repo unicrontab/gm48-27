@@ -639,6 +639,14 @@
             }
         },
         {
+            "Key": "be2d3d78-f378-44ca-9711-80aaa2fd596f",
+            "Value": {
+                "id": "b469e03d-77ec-448c-b7f8-106ef35302ec",
+                "resourcePath": "sprites\\whiteTitle\\whiteTitle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c290c22a-2f1f-4f6d-a4ba-8033fe663e4d",
             "Value": {
                 "id": "630cd846-db4e-4998-b9bf-24cd01388cf5",
@@ -668,6 +676,14 @@
                 "id": "6da76840-10a4-4ce0-b65a-2d3f0293e513",
                 "resourcePath": "rooms\\menu\\menu.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "c8ea0b1f-7951-46d7-b893-44e8061b7529",
+            "Value": {
+                "id": "9bf9bda4-92b3-40b6-ada5-a4afec08214c",
+                "resourcePath": "scripts\\detectAndSetupGamepads\\detectAndSetupGamepads.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -799,6 +815,14 @@
             }
         },
         {
+            "Key": "ed23f279-e0e3-4b80-a209-287bd948a207",
+            "Value": {
+                "id": "29d2f01d-a754-410d-8d73-04d346658da3",
+                "resourcePath": "objects\\oWhiteTitle\\oWhiteTitle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ee5a3b1d-12ab-4842-a95e-a18032ef8df8",
             "Value": {
                 "id": "ec66705d-ec95-477a-bbff-f58874474d35",
@@ -908,7 +932,8 @@
         "3ca8d942-467e-4c26-83b9-3631548cd887",
         "d8947c03-41aa-4c81-8853-a7b5a3f3f80e",
         "31c8feee-2f5a-48e1-b18d-84a0289deb3a",
-        "3c93ffbc-8410-4de2-b815-ae58d02ee0e5"
+        "3c93ffbc-8410-4de2-b815-ae58d02ee0e5",
+        "c8ea0b1f-7951-46d7-b893-44e8061b7529"
     ],
     "tutorial": ""
 }

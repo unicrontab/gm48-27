@@ -1,4 +1,5 @@
 /// @description Menu Input
+detectAndSetupGamepads();
 
 keyUp =  keyboard_check_pressed(188) + keyboard_check_pressed(ord("W")) + keyboard_check_pressed(vk_up);
 keyDown = keyboard_check_pressed(ord("S")) + keyboard_check_pressed(ord("O")) + keyboard_check_pressed(vk_down);
