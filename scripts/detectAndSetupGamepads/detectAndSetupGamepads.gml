@@ -13,8 +13,5 @@ for (var i = 0; i <= gamepadCount; i++;){
 }
 
 if (detectedGamepads == 0) global.gamepad = noone;
-
-show_debug_message("Player1: " + string(global.gamepad));
-
 return detectedGamepads;
 
