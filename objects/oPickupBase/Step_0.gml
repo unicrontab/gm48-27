@@ -12,3 +12,22 @@ else{
 	x += (xTo - x) / snapSpeed;
 	y += (yTo - y) / snapSpeed;
 }
+
+buffer = 5;
+xSeed = random_range(0,1);
+xdir = 1;
+if (xSeed > 0.5) { xdir = -1; } else { xdir = 1 };
+xdistance = (random_range(0,5) + buffer) * xdir;
+
+ySeed = random_range(0,1);
+ydir = 1;	   	   
+if (ySeed > 0.5) { ydir = -1; } else { ydir = 1 };
+ydistance = (random_range(0,5) + buffer) * ydir;
+				   
+if (particleCounter == particleDelay) {
+	instance_create_layer(x + xdistance,y + ydistance,"Instances", whiteParticle);
+	instance_create_layer(x + xdistance,y + ydistance,"Instances", pinkParticle);
+	instance_create_layer(x + xdistance,y + ydistance,"Instances", purpleParticle);
+	particleCounter = 0;
+}
+particleCounter += 1;

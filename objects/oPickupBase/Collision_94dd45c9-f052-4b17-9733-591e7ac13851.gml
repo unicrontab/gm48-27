@@ -6,5 +6,8 @@ if (followTarget == noone){
 	
 	offset = ds_map_size(global.Inventory);
 	ds_list_add(global.Inventory, object_get_name(object_index));
-	//ds_map_add(global.Inventory, object_get_name(object_index), title);
+	repeat(10) {
+		instance_create_layer(x + xdistance,y + ydistance,"Instances", whiteParticle);
+		instance_create_layer(x + xdistance,y + ydistance,"Instances", pinkParticle);
+	}
 }

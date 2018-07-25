@@ -4,7 +4,7 @@ timeout -= 1;
 image_alpha -= fadeSpeed;
 image_angle += rotation;
 
-if (timeout <= 0 || opacity <= 0) {
+if (timeout <= 0 || image_alpha <= 0) {
 	image_alpha = 0;
 	instance_destroy();
 }

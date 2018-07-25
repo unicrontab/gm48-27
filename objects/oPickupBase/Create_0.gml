@@ -11,3 +11,6 @@ offset = 0;
 snapSpeed = 15;
 xTo = x;
 yTo = y;
+
+particleDelay = 15;
+particleCounter = 0;
