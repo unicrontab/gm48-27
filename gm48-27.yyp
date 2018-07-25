@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "11822591-2f2a-4855-b829-354f4dbbd179",
+            "Value": {
+                "id": "776ab354-9e05-4d79-b6f7-4f816a080b23",
+                "resourcePath": "objects\\collideAnimation\\collideAnimation.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "13b6a8ef-d1d8-4e53-9c3e-dd21b9c47dd2",
             "Value": {
                 "id": "8b66bac7-8af7-44d7-a7c7-74a08be30187",
@@ -143,11 +151,35 @@
             }
         },
         {
+            "Key": "1ff41fda-710e-4d67-91d8-a023acb5103c",
+            "Value": {
+                "id": "5adb7c33-1819-40ae-a405-a174039bb115",
+                "resourcePath": "objects\\oGrassAnimation1\\oGrassAnimation1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2050be40-3e8e-4203-9c05-cb73130a5cc2",
+            "Value": {
+                "id": "922c6197-587a-49b3-a2aa-77003b1c10b2",
+                "resourcePath": "sprites\\grassAnimation1\\grassAnimation1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "26d1b574-3417-4e29-af57-63956b74594e",
             "Value": {
                 "id": "f6c8727b-1419-4771-b5c6-3e6d0fef7146",
                 "resourcePath": "views\\26d1b574-3417-4e29-af57-63956b74594e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2791ffc2-55a4-4c18-95ef-361097093e3b",
+            "Value": {
+                "id": "74497ff6-9c15-4a5e-9c07-70e2955be2c1",
+                "resourcePath": "sprites\\grassAnimation2\\grassAnimation2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -196,6 +228,14 @@
                 "id": "219ffab9-7da5-49d7-bff7-2dc54e126272",
                 "resourcePath": "rooms\\level3\\level3.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "3b5398f4-c40b-4ed1-b8fa-d76cea4308bb",
+            "Value": {
+                "id": "d8e41fd4-123d-4395-8120-3d4cb0a962e4",
+                "resourcePath": "objects\\oGrassAnimation2\\oGrassAnimation2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
