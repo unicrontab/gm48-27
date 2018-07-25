@@ -8,13 +8,13 @@ xspeed = 0;
 yspeed = 0;
 maxYSpeed = 10;
 grav = 0.15;
+wallSlideGrav = 0.07;
 jumpSpeed = 4;
 
 wallJumpSpeed = 10;
 wallSliding = false;
 doubleJumpSpeed = 3;
 canDoubleJump = true;
-canWallJump = true;
 wallJumping = false;
 disableJoystick = false;
 

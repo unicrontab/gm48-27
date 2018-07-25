@@ -11,11 +11,16 @@ if (global.gamepad != noone && !disableJoystick) {
 
 if (!global.transitioning && !oGameController.paused){
 	xspeed = move * movespeed;
+	if wallSliding{
+		yspeed += wallSlideGrav;
+	}
+	else{
+		yspeed += grav;
+	}
 	wallSliding = false;
 	if (wallJumping){
 		xspeed += 1 * image_xscale;
 	}
-	yspeed += grav;
 	if (yspeed > maxYSpeed) yspeed = maxYSpeed;
 
 	// Jumping
@@ -38,24 +43,24 @@ if (!global.transitioning && !oGameController.paused){
 		}
 	}
 	else if (right1 != 0 || right2 != 0){
-		if ((gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp) && canWallJump) {
+		if ((gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp)) {
 			audio_play_sound(jump, 10, false);
-			canWallJump = false;
 			wallJumping = true;
 			disableJoystick = true;
-			yspeed += -doubleJumpSpeed / 2;
+			if (yspeed < 0) yspeed += -doubleJumpSpeed / 2;
+			else yspeed = -doubleJumpSpeed;
 			xspeed -= wallJumpSpeed;
 			alarm[0] = room_speed;
 			alarm[1] = room_speed / 9;
 		}
 	}
 	else if (left1 != 0 || left2 != 0){
-		if ((gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp) && canWallJump) {
+		if ((gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp)) {
 			audio_play_sound(jump, 10, false);
-			canWallJump = false;
 			wallJumping = true;
 			disableJoystick = true;
-			yspeed += -doubleJumpSpeed / 2;
+			if (yspeed < 0) yspeed += -doubleJumpSpeed / 2;
+			else yspeed = -doubleJumpSpeed;
 			xspeed += wallJumpSpeed;
 			alarm[0] = room_speed;
 			alarm[1] = room_speed / 9;
@@ -65,11 +70,12 @@ if (!global.transitioning && !oGameController.paused){
 		if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp {
 			audio_play_sound(jump, 10, false);
 			canDoubleJump = false;
-			yspeed += -doubleJumpSpeed;
+			if (yspeed < 0) yspeed += -doubleJumpSpeed;
+			else yspeed = -doubleJumpSpeed;
 		}
 	}
 		
-
+show_debug_message(yspeed);
 	// Vertical tilemap collision
 	y += yspeed;
 	if (yspeed > 0){ // Downward
@@ -86,7 +92,7 @@ if (!global.transitioning && !oGameController.paused){
 
 			yspeed = 0;
 			canDoubleJump = true;
-			canWallJump = true;
+			wallJumping = false;
 		}
 		else if (right != 0 || left != 0){
 			wallSliding = true;
