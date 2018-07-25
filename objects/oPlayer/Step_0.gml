@@ -5,7 +5,7 @@ keyUp = keyboard_check_pressed(188) + keyboard_check_pressed(ord("W")) + keyboar
 move = keyRight - keyLeft;
 
 if (global.gamepad != noone && !disableJoystick) {
-	lh_axis = gamepad_axis_value(global.gamepad, gp_axislh);
+	lh_axis = floor((gamepad_axis_value(global.gamepad, gp_axislh) * 100)) / 100;
 	move = lh_axis + keyRight - keyLeft;
 }
 
