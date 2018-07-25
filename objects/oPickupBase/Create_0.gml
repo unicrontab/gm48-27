@@ -12,5 +12,8 @@ snapSpeed = 15;
 xTo = x;
 yTo = y;
 
-particleDelay = 15;
+particleDelay = 10;
 particleCounter = 0;
+
+spawnOnPlayer = place_meeting(x,y,oPlayer);
+havePlayedSound = false;

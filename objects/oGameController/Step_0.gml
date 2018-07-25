@@ -14,3 +14,17 @@ if (!completed && completeInjured == totalInjured && totalInjured != noone){
 	completed = true;
 	alarm[1] = room_speed * 3;
 }
+
+
+if (countdown != noone && active && playingTicker == false) {
+	audio_stop_sound(ambientBackground);
+	audio_play_sound(tickTock, 100, true);
+	playingTicker = true;
+}
+
+if (!active && playingTicker = true) {
+	playingTicker = false;
+	audio_stop_sound(tickTock);
+	audio_play_sound(ambientBackground, 100, true);
+	
+}

@@ -11,3 +11,8 @@ if (followTarget == noone){
 		instance_create_layer(x + xdistance,y + ydistance,"Instances", pinkParticle);
 	}
 }
+
+if (!spawnOnPlayer && !havePlayedSound) {
+	audio_play_sound(highScore, 100, false);
+	havePlayedSound = true;	
+}
