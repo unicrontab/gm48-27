@@ -13,6 +13,16 @@ if (!global.transitioning && !oGameController.paused){
 	xspeed = move * movespeed;
 	if wallSliding{
 		yspeed += wallSlideGrav;
+		// -1 in x is to get it to line up when sprite is flipped :/
+		dustOpacity = abs(yspeed);
+		dust = noone;
+		if (dustOpacity > 2) {
+			dust = instance_create_layer(x + (7 * image_xscale) -1, irandom_range(y - 16, y), "Instances", yellowDustParticle);
+		} else {
+			dust = instance_create_layer(x + (7 * image_xscale) -1, irandom_range(y - 16, y), "Instances", dustParticle);
+		}
+		dust.image_alpha = random_range(0, dustOpacity);
+		dust.timeout = random_range(0, dustOpacity * room_speed);
 	}
 	else{
 		yspeed += grav;
@@ -39,12 +49,40 @@ if (!global.transitioning && !oGameController.paused){
 	if (t1 != 0 || t2 != 0 || jt1 != 0 || jt2 != 0){
 		if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp {
 			yspeed += -jumpSpeed;
+			repeat(10) {
+				dust = instance_create_layer(x + random_range(-2,2), y + irandom_range(-1,1), "Instances", dustParticle);
+				/* dustDir = random_range(70,120);
+				seed = irandom_range(0,10);
+				if seed > 5 dustDir = random_range(165,195);
+				*/
+				dustDir = random_range(0,360);
+				dust.speed = random_range(0.1,1);
+				dust.direction = dustDir;
+				dust.image_alpha = 0.8;
+				dust.timeout = 5 * room_speed;
+				dust.fadeSpeed = 0.01;
+			}
 			audio_play_sound(jump, 10, false);
 		}
 	}
 	else if (right1 != 0 || right2 != 0){
 		if ((gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp)) {
 			audio_play_sound(jump, 10, false);
+			
+			repeat(5) {
+				dust = instance_create_layer(x + 5, y + irandom_range(-1,1), "Instances", dustParticle);
+				/* dustDir = random_range(70,120);
+				seed = irandom_range(0,10);
+				if seed > 5 dustDir = random_range(165,195);
+				*/
+				dustDir = random_range(0,360);
+				dust.speed = random_range(0.1,1);
+				dust.direction = dustDir;
+				dust.image_alpha = 0.8;
+				dust.timeout = 5 * room_speed;
+				dust.fadeSpeed = 0.01;
+			}
+			
 			wallJumping = true;
 			disableJoystick = true;
 			if (yspeed < 0) yspeed += -doubleJumpSpeed / 2;
@@ -57,6 +95,21 @@ if (!global.transitioning && !oGameController.paused){
 	else if (left1 != 0 || left2 != 0){
 		if ((gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp)) {
 			audio_play_sound(jump, 10, false);
+			
+			repeat(5) {
+				dust = instance_create_layer(x - 5, y + irandom_range(-1,1), "Instances", dustParticle);
+				/* dustDir = random_range(70,120);
+				seed = irandom_range(0,10);
+				if seed > 5 dustDir = random_range(165,195);
+				*/
+				dustDir = random_range(0,360);
+				dust.speed = random_range(0.1,1);
+				dust.direction = dustDir;
+				dust.image_alpha = 0.8;
+				dust.timeout = 5 * room_speed;
+				dust.fadeSpeed = 0.01;
+			}
+			
 			wallJumping = true;
 			disableJoystick = true;
 			if (yspeed < 0) yspeed += -doubleJumpSpeed / 2;
@@ -68,6 +121,21 @@ if (!global.transitioning && !oGameController.paused){
 	}
 	else if (canDoubleJump){
 		if gamepad_button_check_pressed(global.gamepad, gp_face1) || keyUp {
+			
+			repeat(5) {
+				dust = instance_create_layer(x + random_range(-2,2), y + irandom_range(-1,1), "Instances", purpleDustParticle);
+				/* dustDir = random_range(70,120);
+				seed = irandom_range(0,10);
+				if seed > 5 dustDir = random_range(165,195);
+				*/
+				dustDir = random_range(0,360);
+				dust.speed = random_range(0.1,1);
+				dust.direction = dustDir;
+				dust.image_alpha = 0.8;
+				dust.timeout = 5 * room_speed;
+				dust.fadeSpeed = 0.01;
+			}
+			
 			audio_play_sound(jump, 10, false);
 			canDoubleJump = false;
 			if (yspeed < 0) yspeed += -doubleJumpSpeed;

@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "3515826d-32ca-46e8-a0cb-207ab0331662",
+            "Value": {
+                "id": "e6fff318-ee00-4eb7-a325-18037b02ec8a",
+                "resourcePath": "objects\\dustParticle\\dustParticle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "352f33e1-a3b8-4aa5-a300-716a383c62aa",
             "Value": {
                 "id": "219ffab9-7da5-49d7-bff7-2dc54e126272",
@@ -340,6 +348,14 @@
                 "id": "a60b95d4-a100-48c4-bd9c-c2562919413d",
                 "resourcePath": "views\\56748aa8-2f88-49fb-9f59-2ba4b286c05c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "58b57540-275f-4c7f-b78c-1da3093eddd6",
+            "Value": {
+                "id": "478e8ab3-c2e7-46b6-96b3-dc7eb8a08049",
+                "resourcePath": "objects\\yellowDustParticle\\yellowDustParticle.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -924,6 +940,14 @@
                 "id": "ec66705d-ec95-477a-bbff-f58874474d35",
                 "resourcePath": "sprites\\sInjured\\sInjured.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eee491bc-4da1-4194-bedf-89a51e45c759",
+            "Value": {
+                "id": "63f6287c-85eb-44a2-aa9e-f32771854b2d",
+                "resourcePath": "objects\\purpleDustParticle\\purpleDustParticle.yy",
+                "resourceType": "GMObject"
             }
         },
         {
