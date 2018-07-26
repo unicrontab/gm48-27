@@ -143,7 +143,6 @@ if (!global.transitioning && !oGameController.paused){
 		}
 	}
 		
-show_debug_message(yspeed);
 	// Vertical tilemap collision
 	y += yspeed;
 	if (yspeed > 0){ // Downward
